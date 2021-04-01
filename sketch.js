@@ -3,7 +3,7 @@ var block1, block2, block3, block4;
 var ball, edges;
 var music;
 
-function preload(){
+function preload() {
     music = loadSound("music.mp3");
 }
 
@@ -47,11 +47,11 @@ function draw() {
         music.stop();
     }
 
-    if(block3.isTouching(ball) && ball.bounceOff(block3)){
+    if (block3.isTouching(ball) && ball.bounceOff(block3)) {
         ball.shapeColor = "red";
     }
 
-    if(block4.isTouching(ball) && ball.bounceOff(block4)){
+    if (block4.isTouching(ball) && ball.bounceOff(block4)) {
         ball.shapeColor = "green";
     }
 
